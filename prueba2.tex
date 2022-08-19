@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage{adjustbox}
+
+\begin{document}
+
+\[ 
+\begin{adjustbox}{max width=\textwidth, array=ccc|ccccccc} \\
+  x_{1} & x_{2} & x_{3} & ((x_{1} & \land & x_{2}) & \lor & ( & \lnot & x_{3})) \\
+\hline 
+  0 & 0 & 0 &  & 0 & & \mathbf{1} & & 1 & \\
+  0 & 0 & 1 &  & 0 & & \mathbf{0} & & 0 & \\
+  0 & 1 & 0 &  & 0 & & \mathbf{1} & & 1 & \\
+  0 & 1 & 1 &  & 0 & & \mathbf{0} & & 0 & \\
+  1 & 0 & 0 &  & 0 & & \mathbf{1} & & 1 & \\
+  1 & 0 & 1 &  & 0 & & \mathbf{0} & & 0 & \\
+  1 & 1 & 0 &  & 1 & & \mathbf{1} & & 1 & \\
+  1 & 1 & 1 &  & 1 & & \mathbf{1} & & 0 & \\
+\end{adjustbox}
+\]
+
+\end{document}
